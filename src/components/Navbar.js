@@ -27,31 +27,31 @@ export default function Navbar(props) {
         <div className="navbar--container">
             <div className="navbar--left">
                 <div className="navbar--logo">
-                    <div className="navbar--logo-box"></div>
+                    <div id="blue-box"></div>
                     <div className="navbar--name">Clara Zammar</div>
                 </div>
                 <div className="navbar--position">DEVELOPER</div>
             </div>
-            {displayOverlay && <div className="beige-overlay">
+            <div className={`${displayOverlay ? "beige-overlay" : "hidden"}`}>
                 <div className="navbar--button-container">
                     <a 
-                        href="/" 
+                        href="/Personal-Portfolio/" 
                         className={`navbar--button${props.active === "aboutme" ? " active" : ""}`}
                     >ABOUT ME</a>  
                     <a 
-                        href="/resume" 
+                        href="/Personal-Portfolio/resume" 
                         className={`navbar--button${props.active === "resume" ? " active" : ""}`}
                     >RESUME</a>  
                     <a 
-                        href="projects" 
+                        href="/Personal-Portfolio/projects" 
                         className={`navbar--button${props.active === "projects" ? " active" : ""}`}
                     >PROJECTS</a>  
                     <a 
-                        href="contact" 
+                        href="/Personal-Portfolio/contact" 
                         className={`navbar--button${props.active === "contact" ? " active" : ""}`}
                     >CONTACT</a> 
                 </div> 
-            </div>}
+            </div>
             {displayOverlay ? navOptions : navMenuIcon}
         </div>
     )
