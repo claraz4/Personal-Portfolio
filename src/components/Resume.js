@@ -47,9 +47,15 @@ export default function Resume() {
         <div className="page--container">
             <Navbar active="resume"/>
             <div className="resume--container">
-                <div className="resume--title">
-                    <div id="blue-box"></div>
-                    <h1 className="resume--page-title">RESUME</h1>
+                <div className="flex-row space-between">
+                    <div className="resume--title">
+                        <div id="blue-box"></div>
+                        <h1 className="resume--page-title">RESUME</h1>
+                    </div>
+                    <div id="cv-button">
+                        <a href="actual file url" 
+                        download>DOWNLOAD CV</a>
+                    </div>
                 </div>
                 {resumeBoxes}
                 <div className="resume--info-box">
