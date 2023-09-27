@@ -1,8 +1,9 @@
 import React from "react";
 import Home from "./components/Home";
-import Projects from "./components/Projects"
-import Resume from "./components/Resume"
-import Contact from "./components/Contact" 
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 import "./styles.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -15,6 +16,7 @@ export default function Website() {
                     <Route exact path="/Personal-Portfolio/resume" element={<Resume />} />
                     <Route exact path="/Personal-Portfolio/projects" element={<Projects />} />
                     <Route exact path="/Personal-Portfolio/contact" element={<Contact />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Router>
         </div>
