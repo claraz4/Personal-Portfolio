@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles.css";
+import { Link } from "react-router-dom"
 
 export default function Navbar(props) {
     const [displayOverlay, setDisplayOverlay] = React.useState(false);
@@ -45,7 +46,7 @@ export default function Navbar(props) {
                     <a 
                         href="/Personal-Portfolio/projects" 
                         className={`navbar--button${props.active === "projects" ? " active" : ""}`}
-                    >PROJECTS</a>  
+                    >PROJECTS</a> 
                     <a 
                         href="/Personal-Portfolio/contact" 
                         className={`navbar--button${props.active === "contact" ? " active" : ""}`}
