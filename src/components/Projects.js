@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Title from "./Title";
-import projectsData from "../projects";
+import projectsData from "../data/projects";
 import "../styles.css"
 
 export default function Projects() {

@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Title from "./Title";
-import resumeBoxesData from "../resumeBoxes";
-import skillsData from "../skills";
+import resumeBoxesData from "../data/resumeBoxes";
+import skillsData from "../data/skills";
 import "../styles.css"
 import ReactMde from "react-mde";
 

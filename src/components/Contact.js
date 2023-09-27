@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Title from "./Title";
-import contactData from "../contacts"
+import contactData from "../data/contacts"
 import "../styles.css"
 
 export default function Contact() {
