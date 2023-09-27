@@ -11,14 +11,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* .footer--container { height: 10%; }
-.navbar--container { height: 20%; }
-.home--container,
-.resume--container
- { 
-    height: 70%; 
-} */
-
 :root {
     --dark-beige: #e6dace;
     --light-beige: #f4ece6;
