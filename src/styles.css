@@ -68,7 +68,8 @@ p {
 }
 
 /* Used for the Resume and the Projects section */
-.info-box {
+.info-box,
+.resume--skills-container {
     background-color: white;
     margin: auto;
     padding: 25px 15px 25px 15px;
@@ -102,6 +103,11 @@ p {
     position: absolute;
 }
 
+.navbar--left-separator {
+    display: none;
+    margin: 0;
+}
+
 .navbar--logo {
     align-items: center;
 }
@@ -110,16 +116,23 @@ p {
     font-weight: 900;
     font-size: 1.9rem;
     letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
 }
 
 .navbar--position {
     font-size: 1.7rem;
     font-weight: 300;
-    margin-top: 7px;
+    margin-top: 2px;
+}
+
+.navbar--links-desktop {
+    display: none;
 }
 
 .navbar--lines,
-.navbar--button-container {
+.navbar--button-container,
+.navbar--left {
     display: flex;
     flex-direction: column;
 }
@@ -257,7 +270,6 @@ p {
     background-color: white;
     width: 100vw;
     padding: 0px 30px 0px 30px;
-    margin: 0;
 }
 
 .footer--wix {
@@ -272,10 +284,31 @@ p {
 .page--container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 
 /* HOME */
+.home--background-color {
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -2;
+    position: absolute;
+}
+
+.background-1 {
+    background-color: var(--dark-beige);
+    width: 45%;
+    height: 100vh;
+}
+
+.background-2 {
+    background-color: var(--dark-beige);
+    width: 57%;
+    height: 100vh;
+}
+
 .home--container,
 .home--personal-info {
     display: flex;
@@ -292,7 +325,7 @@ p {
 
 .home--personal-info {
     background-color: var(--light-beige);
-    width: 100%;
+    height: 490px;
     align-items: center;
     box-shadow: 3px 3px 15px 10px rgba(0,0,0,0.1);
 }
@@ -523,4 +556,74 @@ p {
     font-size: 17px;
     margin-bottom: 55px;
     box-shadow: 2px 2px 20px 10px rgba(0,0,0,0.1);
+}
+
+
+/* --RESPONSIVE DESIGN-- */
+@media (min-width: 800px) {
+    /* NAVBAR */
+    .navbar--lines {
+        display: none;
+    }
+
+    .navbar--button-container {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .navbar--links-desktop {
+        display: flex;
+    }
+
+    .navbar--left {
+        flex-direction: row;
+    }
+
+    .navbar--left-separator {
+        display: inline-block;
+        font-size: 30px;
+        margin: 0 10px 0 10px;
+        font-weight: 300;
+    }
+
+
+    /* HOME */
+    .home--container {
+        flex-direction: row;
+        width: 760px;
+        align-self: center;
+        margin: auto;
+    }
+
+    .home--text {
+        width: 55%;
+    }
+
+    .home--personal-info {
+        width: 45%;
+    }
+
+    .background-2 {
+        background-color: white;
+    }
+
+
+    /* RESUME */
+    .resume--container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .info-box {
+        flex-direction: row;
+        display: flex;
+        padding: 40px;
+    }
+
+    .resume--info,
+    .resume--text {
+        width: 50%;
+    }
+
 }

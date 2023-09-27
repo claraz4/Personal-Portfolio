@@ -15,12 +15,16 @@ export default function Resume() {
         fullArray.push(title.rubricInfo.map((info) => {
             return (
                 <div className="info-box">
-                    <p className="resume--date">{info.date}</p>
-                    <p className="resume--subtitle">{info.subtitle}</p>
-                    <p className="resume--subinfo">{info.subinfo1}</p>
-                    <p className="resume--subinfo">{info.subinfo2}</p>
-                    <p className="resume--paragraph">{info.paragraph1}</p>
-                    <p className="resume--paragraph">{info.paragraph2}</p>
+                    <div className="resume--info">
+                        <p className="resume--date">{info.date}</p>
+                        <p className="resume--subtitle">{info.subtitle}</p>
+                        <p className="resume--subinfo">{info.subinfo1}</p>
+                        <p className="resume--subinfo">{info.subinfo2}</p>
+                    </div>
+                    <div className="resume--text">
+                        <p className="resume--paragraph">{info.paragraph1}</p>
+                        <p className="resume--paragraph">{info.paragraph2}</p>
+                    </div> 
                 </div> 
             )}
         ))
@@ -31,14 +35,20 @@ export default function Resume() {
     // Creating the array that will render the skillset
     const skills = skillsData.map(skill => {
         const fullData = [<h3 className="resume--rubric-title">{skill.skill}</h3>]; // I can use this syntax since I know there is only one key
-        fullData.push(skill.allSkills.map(s => {
-            return (
-                <div className="flex-row">
-                    <div id="small-blue-box"></div>
-                    <p>{s}</p>
-                </div>
-            )
-        }))
+        
+        const partData = (
+            <div>
+                {skill.allSkills.map(s => {
+                return (
+                    <div className="flex-row">
+                        <div id="small-blue-box"></div>
+                        <p>{s}</p>
+                    </div>
+                )})}
+            </div>
+        );
+
+        fullData.push(partData);
         fullData.push(<br></br>);
 
         return fullData;
@@ -59,7 +69,7 @@ export default function Resume() {
                     </div>
                 </div>
                 {resumeBoxes}
-                <div className="resume--info-box">
+                <div className="resume--skills-container">
                     {skills}
                 </div>
             </div>

@@ -1,9 +1,29 @@
 import React from "react";
 import "../styles.css";
-import { Link } from "react-router-dom"
 
 export default function Navbar(props) {
     const [displayOverlay, setDisplayOverlay] = React.useState(false);
+
+    const links = (
+        <div className="navbar--button-container">
+                <a 
+                    href="/Personal-Portfolio/" 
+                    className={`navbar--button${props.active === "aboutme" ? " active" : ""}`}
+                >ABOUT ME</a>  
+                <a 
+                    href="/Personal-Portfolio/resume" 
+                    className={`navbar--button${props.active === "resume" ? " active" : ""}`}
+                >RESUME</a>  
+                <a 
+                    href="/Personal-Portfolio/projects" 
+                    className={`navbar--button${props.active === "projects" ? " active" : ""}`}
+                >PROJECTS</a> 
+                <a 
+                    href="/Personal-Portfolio/contact" 
+                    className={`navbar--button${props.active === "contact" ? " active" : ""}`}
+                >CONTACT</a> 
+        </div> 
+    );
 
     const navMenuIcon = (
         <div onClick={handleClick} className="navbar--lines">
@@ -29,29 +49,20 @@ export default function Navbar(props) {
             <div className="navbar--left">
                 <div className="navbar--logo">
                     <div id="blue-box"></div>
-                    <div className="navbar--name">Clara Zammar</div>
+                    <a href="/Personal-Portfolio/" className="navbar--name">Clara Zammar</a>
                 </div>
-                <div className="navbar--position">DEVELOPER</div>
+                <div className="flex-row">
+                    <p className="navbar--left-separator">|</p>
+                    <div className="navbar--position">DEVELOPER</div>
+                </div>
             </div>
+
+            <div className="navbar--links-desktop">
+                {links /* This is for the desktop navbar*/}
+            </div>
+
             <div className={`${displayOverlay ? "beige-overlay" : "hidden"}`}>
-                <div className="navbar--button-container">
-                    <a 
-                        href="/Personal-Portfolio/" 
-                        className={`navbar--button${props.active === "aboutme" ? " active" : ""}`}
-                    >ABOUT ME</a>  
-                    <a 
-                        href="/Personal-Portfolio/resume" 
-                        className={`navbar--button${props.active === "resume" ? " active" : ""}`}
-                    >RESUME</a>  
-                    <a 
-                        href="/Personal-Portfolio/projects" 
-                        className={`navbar--button${props.active === "projects" ? " active" : ""}`}
-                    >PROJECTS</a> 
-                    <a 
-                        href="/Personal-Portfolio/contact" 
-                        className={`navbar--button${props.active === "contact" ? " active" : ""}`}
-                    >CONTACT</a> 
-                </div> 
+                {links}
             </div>
             {displayOverlay ? navOptions : navMenuIcon}
         </div>
