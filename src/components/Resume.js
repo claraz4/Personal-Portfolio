@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Title from "./Title";
 import resumeBoxesData from "../resumeBoxes";
 import skillsData from "../skills";
 import "../styles.css"
@@ -13,7 +14,7 @@ export default function Resume() {
         
         fullArray.push(title.rubricInfo.map((info) => {
             return (
-                <div className="resume--info-box">
+                <div className="info-box">
                     <p className="resume--date">{info.date}</p>
                     <p className="resume--subtitle">{info.subtitle}</p>
                     <p className="resume--subinfo">{info.subinfo1}</p>
@@ -48,10 +49,10 @@ export default function Resume() {
             <Navbar active="resume"/>
             <div className="resume--container">
                 <div className="flex-row space-between">
-                    <div className="resume--title">
-                        <div id="blue-box"></div>
-                        <h1 className="resume--page-title">RESUME</h1>
-                    </div>
+                    <Title 
+                        title={"RESUME"}
+                        className={""}
+                    />
                     <div id="cv-button">
                         <a href="actual file url" 
                         download>DOWNLOAD CV</a>
