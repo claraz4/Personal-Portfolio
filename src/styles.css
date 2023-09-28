@@ -358,15 +358,6 @@ p {
     padding: 0px 35px 0px 35px;
 }
 
-.home--social-media > a > img {
-    width: 23px;
-    height: 23px;
-}
-
-.home--social-media-icon > a:hover {
-    cursor: pointer; 
-}
-
 .home--personal-info-separator {
     background-color: var(--blue);
     height: 2px;
@@ -629,7 +620,7 @@ p {
         flex-direction: row;
         width: 760px;
         align-self: center;
-        margin: 20% auto 5% auto;
+        margin: 13.5% auto 5% auto;
     }
 
     .home--text {

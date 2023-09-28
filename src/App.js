@@ -11,10 +11,10 @@ export default function App() {
         <div>
             <Router>
                 <Routes>
-                    <Route exact path="/Personal-Portfolio/" element={<Home />} />
-                    <Route exact path="/Personal-Portfolio/resume" element={<Resume />} />
-                    <Route exact path="/Personal-Portfolio/projects" element={<Projects />} />
-                    <Route exact path="/Personal-Portfolio/contact" element={<Contact />} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/resume" element={<Resume />} />
+                    <Route exact path="/projects" element={<Projects />} />
+                    <Route exact path="/contact" element={<Contact />} />
                 </Routes>
             </Router>
         </div>

@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import claraPic from "../images/clara.JPG";
-import instagramLogo from "../images/instagram-logo.png"
-import twitterLogo from "../images/twitter-logo.png"
-import linkedinLogo from "../images/linkedin-logo.png"
-import githubLogo from "../images/github-logo.png"
+import claraPic from "../images/clara.webp";
+import instagramLogo from "../images/instagram-logo.webp"
+import twitterLogo from "../images/twitter-logo.webp"
+import linkedinLogo from "../images/linkedin-logo.webp"
+import githubLogo from "../images/github-logo.webp"
+import { Link } from "react-router-dom";
 import "../styles.css";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
                 <div className="home--container">
                     <div className="home--personal-info">
                         <div className="home--img-container">
-                            <img src={claraPic} className="home--img"/>
+                            <img src={claraPic} className="home--img" alt="Clara" />
                         </div>
                         <div className="home--name-container">
                             <h1 className="home--name">Clara</h1>
@@ -30,16 +31,16 @@ export default function Home() {
                         <h3 className="home--profession">DEVELOPER</h3>
                         <div className="home--social-media">
                             <a href="https://www.instagram.com/clarazammar/">
-                                <img src={instagramLogo}/>
+                                <img src={instagramLogo} alt="Instagram Logo" width="23px" height="23px" />
                             </a>
                             <a href="https://www.twitter.com/claraz4/">
-                                <img src={twitterLogo}/>
+                                <img src={twitterLogo} alt="Twitter Logo" width="23px" height="23px" />
                             </a>
                             <a href="https://www.linkedin.com/in/clara-zammar-951748262/">
-                                <img src={linkedinLogo}/>
+                                <img src={linkedinLogo} alt="Linked In Logo" width="23px" height="23px" />
                             </a>
                             <a href="https://github.com/claraz4">
-                                <img src={githubLogo}/>
+                                <img src={githubLogo} alt="GitHub Logo" width="23px" height="23px" />
                             </a>
                         </div>
                     </div>
@@ -49,10 +50,10 @@ export default function Home() {
 
                         <div className="home--buttons-container">
                             <div className="home--button blue-bg">
-                                <a href="/Personal-Portfolio/resume" id="resume-button">RESUME</a>
+                                <Link to="/resume" id="resume-button">RESUME</Link>
                             </div>
                             <div className="home--button outline-box">
-                                <a href="/Personal-Portfolio/projects" id="projects-button">PROJECTS</a>
+                                <Link to="/projects" id="projects-button">PROJECTS</Link>
                             </div>
                         </div>
 

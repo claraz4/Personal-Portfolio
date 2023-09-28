@@ -1,8 +1,6 @@
 Problems to fix: 
 - The downloadable CV
-- The deployment to Page
 - Filling out my details
 - Adding the small arrow that takes us back to the beginning
 - See what you're going to do about the icons from Flaticon
-- Turn all images into webpg
 - Check the google page speed insight

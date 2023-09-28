@@ -1,27 +1,24 @@
 import React from "react";
 import "../styles.css";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar(props) {
     const [displayOverlay, setDisplayOverlay] = React.useState(false);
 
+    // Scroll to the top of the page whenever the URL changes
+    const location = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
+
     const links = (
         <div className="navbar--button-container">
-                <a 
-                    href="/Personal-Portfolio/" 
-                    className={`navbar--button${props.active === "aboutme" ? " active" : ""}`}
-                >ABOUT ME</a>  
-                <a 
-                    href="/Personal-Portfolio/resume" 
-                    className={`navbar--button${props.active === "resume" ? " active" : ""}`}
-                >RESUME</a>  
-                <a 
-                    href="/Personal-Portfolio/projects" 
-                    className={`navbar--button${props.active === "projects" ? " active" : ""}`}
-                >PROJECTS</a> 
-                <a 
-                    href="/Personal-Portfolio/contact" 
-                    className={`navbar--button${props.active === "contact" ? " active" : ""}`}
-                >CONTACT</a> 
+                <Link className={`navbar--button${props.active === "aboutme" ? " active" : ""}`} to="/" >ABOUT ME</Link>
+                <Link className={`navbar--button${props.active === "resume" ? " active" : ""}`} to="/resume" >RESUME</Link>
+                <Link className={`navbar--button${props.active === "projects" ? " active" : ""}`} to="/projects" >PROJECTS</Link>
+                <Link className={`navbar--button${props.active === "contact" ? " active" : ""}`} to="/contact" >CONTACT</Link>
         </div> 
     );
 
@@ -49,7 +46,7 @@ export default function Navbar(props) {
             <div className="navbar--left">
                 <div className="navbar--logo">
                     <div id="blue-box"></div>
-                    <a href="/Personal-Portfolio/" className="navbar--name">Clara Zammar</a>
+                    <Link to="/" className="navbar--name">Clara Zammar</Link>
                 </div>
                 <div className="flex-row">
                     <p className="navbar--left-separator">|</p>
