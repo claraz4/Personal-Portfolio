@@ -9,7 +9,7 @@ export default function Contact() {
     const contact = contactData.map(type => {
         const fullData = [<h4 className="resume--rubric-title">{type.title}</h4>];
 
-        const elements = (
+        let elements = (
             <div className="contact--info-box">
                 {type.elements.map(element => {
                     return (
@@ -21,7 +21,7 @@ export default function Contact() {
                 })}
             </div>
         );
-
+        
         fullData.push(elements);
         return fullData;
     })

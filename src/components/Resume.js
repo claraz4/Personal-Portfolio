@@ -37,7 +37,7 @@ export default function Resume() {
         const fullData = [<h3 className="resume--rubric-title">{skill.skill}</h3>]; // I can use this syntax since I know there is only one key
         
         const partData = (
-            <div>
+            <div id="skills">
                 {skill.allSkills.map(s => {
                 return (
                     <div className="flex-row">
@@ -69,7 +69,7 @@ export default function Resume() {
                     </div>
                 </div>
                 {resumeBoxes}
-                <div className="resume--skills-container">
+                <div className="info-box" id="skills-container">
                     {skills}
                 </div>
             </div>

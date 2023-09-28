@@ -68,21 +68,21 @@ p {
 }
 
 /* Used for the Resume and the Projects section */
-.info-box,
-.resume--skills-container {
+.info-box {
     background-color: white;
     margin: auto;
     padding: 25px 15px 25px 15px;
     font-size: 17px;
     margin-bottom: 35px;
     box-shadow: 2px 2px 20px 10px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 .align-start {
     align-items: flex-start;
 }
 
-.remove-padding {
+#project {
     padding: 0;
 }
 
@@ -300,13 +300,17 @@ p {
 .background-1 {
     background-color: var(--dark-beige);
     width: 45%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .background-2 {
     background-color: var(--dark-beige);
     width: 57%;
-    height: 100vh;
+    /* height: 100vh; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .home--container,
@@ -455,6 +459,7 @@ p {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 35px;
 }
 
 .resume--rubric-title {
@@ -480,6 +485,10 @@ p {
     margin-top: 30px;
 }
 
+#skills {
+    width: 100%;
+}
+
 
 /* PROJECTS */
 .projects--container {
@@ -494,7 +503,7 @@ p {
 }
 
 .project--title {
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 900;
     color: var(--blue);
     margin: 0;
@@ -503,6 +512,7 @@ p {
 
 .project--role {
     margin: 0;
+    font-size: 0.8rem;
 }
 
 .padding-10 {
@@ -560,8 +570,15 @@ p {
 
 
 /* --RESPONSIVE DESIGN-- */
+
 @media (min-width: 800px) {
     /* NAVBAR */
+    .navbar--container {
+        position: fixed;
+        top: 0;
+        height: 100px;
+    }
+
     .navbar--lines {
         display: none;
     }
@@ -586,13 +603,33 @@ p {
         font-weight: 300;
     }
 
+    .navbar--button {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    /* This is to deal with the wrapping text of the navbar */
+    @media (max-width: 947px) {
+        .navbar--name {
+            max-width: 100px;
+
+        }
+    }
+
+    /* This is to deal with the padding of the buttons of the navbar*/
+    @media (max-width: 1130px) {
+        .navbar--button {
+            padding: 10px;
+        }
+    }
+
 
     /* HOME */
     .home--container {
         flex-direction: row;
         width: 760px;
         align-self: center;
-        margin: auto;
+        margin: 20% auto 5% auto;
     }
 
     .home--text {
@@ -608,13 +645,17 @@ p {
     }
 
 
-    /* RESUME */
-    .resume--container {
-        width: 700px;
+    /* CONTAINERS */
+    .resume--container,
+    .projects--container,
+    .contact--container {
+        width: 790px;
         margin-right: auto;
         margin-left: auto;
     }
 
+
+    /* RESUME */
     .info-box {
         flex-direction: row;
         display: flex;
@@ -626,4 +667,36 @@ p {
         width: 50%;
     }
 
+    #skills-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #skills,
+    .contact--info-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #project--title-parag {
+        display: flex;
+        flex-direction: column;
+        padding: 45px 5px 20px 0;
+    }
+
+    #project {
+        height: 350px;
+    }
+
+    .project--img {
+        height: 100%;
+        max-width: 350px;
+    }
+
+    
+    /* CONTACTS */
+    .contact--info-box {
+        padding: 30px 50px 10px 50px;
+    }
 }

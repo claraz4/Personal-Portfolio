@@ -4,9 +4,9 @@ import Projects from "./components/Projects"
 import Resume from "./components/Resume"
 import Contact from "./components/Contact" 
 import "./styles.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
-export default function Website() {
+export default function App() {
     return (
         <div>
             <Router>

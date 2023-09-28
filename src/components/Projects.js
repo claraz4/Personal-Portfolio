@@ -9,15 +9,17 @@ export default function Projects() {
     // Creating the array that will render the projects
     const projects = projectsData.map(project => {
         return (
-            <div className="info-box remove-padding">
-                <div className="flex-row padding-top-10">
-                    <div id="blue-rectangle"></div>
-                    <div className="padding-10 flex-column align-start">
-                        <h4 className="project--title">{project.projectName}</h4>
-                        <h6 className="project--role">{project.roleTitle}</h6>
+            <div id="project" className="info-box">
+                <div id="project--title-parag">
+                    <div className="flex-row padding-top-10">
+                        <div id="blue-rectangle"></div>
+                        <div className="padding-10 flex-column align-start">
+                            <h4 className="project--title">{project.projectName}</h4>
+                            <h6 className="project--role">{project.roleTitle}</h6>
+                        </div>
                     </div>
+                    <p className="project--paragraph">{project.paragraph}</p>
                 </div>
-                <p className="project--paragraph">{project.paragraph}</p>
                 <img src={require(`../images/${project.imageUrl}`)} className="project--img" />
             </div>
         )
