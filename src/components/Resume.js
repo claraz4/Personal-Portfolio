@@ -5,7 +5,6 @@ import Title from "./Title";
 import resumeBoxesData from "../data/resumeBoxes";
 import skillsData from "../data/skills";
 import "../styles.css"
-import ReactMde from "react-mde";
 
 export default function Resume() {
     // Creating the array to render the experience and education mainly with their respective boxes
@@ -33,20 +32,30 @@ export default function Resume() {
     });
 
     // Creating the array that will render the skillset
-    const skills = skillsData.map(skill => {
-        const fullData = [<h3 className="resume--rubric-title">{skill.skill}</h3>]; // I can use this syntax since I know there is only one key
+    const skills = skillsData.map(type => {
+        const fullData = [<h4 className="resume--rubric-title">{type.type}</h4>];
+        const allSkills = type.skills;
         
-        const partData = (
-            <div id="skills">
-                {skill.allSkills.map(s => {
-                return (
-                    <div className="flex-row">
-                        <div id="small-blue-box"></div>
-                        <p>{s}</p>
+        let partData = (allSkills.map(skill => {
+            return (
+                <div>
+                    <h3 className="resume--rubric-title">{skill.skill}</h3>
+                    <div id="skills">
+                        {skill.allSkills.map(s => {
+                        return (
+                            <div className="flex-row">
+                                <div id="small-blue-box"></div>
+                                <p>{s}</p>
+                            </div>
+                        )})}
                     </div>
-                )})}
-            </div>
-        );
+                </div>  
+            )
+        }));
+
+        partData = (
+            <div className="info-box" id="skills-container">{partData}</div>
+        )
 
         fullData.push(partData);
         fullData.push(<br></br>);
@@ -64,14 +73,12 @@ export default function Resume() {
                         className={""}
                     />
                     <div id="cv-button">
-                        <a href="actual file url" 
+                        <a href="https://docs.google.com/uc?export=download&id=1Xa6mEceSIHUwco0tTWMKq8J_sJkvWZAZ" 
                         download>DOWNLOAD CV</a>
                     </div>
                 </div>
                 {resumeBoxes}
-                <div className="info-box" id="skills-container">
-                    {skills}
-                </div>
+                {skills}
             </div>
             <Footer />
         </div>

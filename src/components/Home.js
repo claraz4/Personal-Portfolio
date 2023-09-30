@@ -10,6 +10,31 @@ import { Link } from "react-router-dom";
 import "../styles.css";
 
 export default function Home() {
+    const introHome = "Welcome to my world of digital innovation." + 
+    "I'm a developer with a passion for turning ideas into exceptional online experiences." +
+    "With every line of code, I craft the future of the web.";
+
+    // Make the last line of the intro dynamic. The animation needs to be repeated every 3 minutes
+    const fullIntroPhrase = " Let's build something extraordinary!";
+    const [introPhrase, setIntroPhrase] = React.useState("");
+
+    // Each letter will appear after one second
+    React.useEffect(() => {
+        setTimeout(() => {
+            if (introPhrase === fullIntroPhrase) {
+                setIntroPhrase("");
+            }
+
+            for (let i = 0; i < fullIntroPhrase.length; i++) {
+                setTimeout(() => {
+                    setIntroPhrase(fullIntroPhrase.substring(0, i + 1));
+                }, i * 100);
+            }
+        }, 1000);
+    }, []);
+        
+
+
     return (
         <div>
             <div className="home--background-color flex-row">
@@ -57,10 +82,12 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <p> 
-                            et sint laboris cupidatat qui lorem aute amet occaecat aliquip commodo incididunt sunt ullamco Duis esse amet enim officia. ea do enim et consequat ex magna occaecat voluptate velit deserunt fugiat voluptate veniam ipsum exercitation ut Duis.
-                        </p>
+                        <p>{introHome}</p>
+                        <div id="intro-phrase">
+                            <p id="greater-than-sign">&gt;</p>
+                            <p>{introPhrase}</p>
                         </div>
+                    </div>
                 </div>
                 <Footer />
             </div>

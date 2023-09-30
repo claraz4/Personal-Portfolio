@@ -6,6 +6,10 @@ import projectsData from "../data/projects";
 import "../styles.css"
 
 export default function Projects() {
+    // Text for the project
+    const projectIntro = "Discover my portfolio of projects that showcase my development journey. " + 
+    "Each project here represents a milestone in my learning process and a step towards becoming a better developer. "
+
     // Creating the array that will render the projects
     const projects = projectsData.map(project => {
         return (
@@ -34,7 +38,7 @@ export default function Projects() {
                         title={"PROJECTS"}
                         className={" center-content"}
                     />
-                    <p className="justify-text">qui consequat ex irure laborum do dolore pariatur consequat aliquip exercitation commodo ullamco commodo in velit. eu occaecat nisi esse veniam sint irure consectetur eiusmod commodo esse id laboris cillum voluptate anim aute non.</p>
+                    <p className="justify-text">{projectIntro}</p>
                 </div>
                 {projects}
             </div>

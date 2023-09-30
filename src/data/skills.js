@@ -1,19 +1,39 @@
 const skills = [
     {
-        "skill" : "Professional Skillset",
-        "allSkills" : [
-            "minim fugiat ea laboris", 
-            "esse consectetur", 
-            "consectetur nisi elit sed voluptate dolore", 
-            "deserunt sunt ad consequat"
-        ]
-    },
-    {
-        "skill" : "Languages",
-        "allSkills" : [
-            "English", 
-            "Arabic", 
-            "French"
+        "type" : "Professional Skills",
+        "skills" : [
+            {
+                "skill" : "Programming Languages",
+                "allSkills" : [
+                    "Java", 
+                    "Javascript", 
+                    "Python", 
+                    "C"
+                ]
+            },
+            {
+                "skill" : "Frontend Development",
+                "allSkills" : [
+                    "HTML", 
+                    "CSS", 
+                    "Bootstrap", 
+                    "React"
+                ]
+            },
+            {
+                "skill" : "Database Skills",
+                "allSkills" : [
+                    "SQL"
+                ]
+            },
+            {
+                "skill" : "Languages",
+                "allSkills" : [
+                    "English", 
+                    "Arabic", 
+                    "French"
+                ]
+            }
         ]
     }
 ];
