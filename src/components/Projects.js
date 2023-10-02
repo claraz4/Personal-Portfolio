@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Title from "./Title";
 import projectsData from "../data/projects";
-import "../styles.css"
+import "../styles.css";
 
 export default function Projects() {
     // Text for the project
@@ -24,7 +24,38 @@ export default function Projects() {
                     </div>
                     <p className="project--paragraph">{project.paragraph}</p>
                 </div>
-                <img src={require(`../images/${project.imageUrl}`)} className="project--img" />
+                <div className="project--img-container">
+                    <a href={project.projectURL}>  
+                    <picture className="project--img">
+                        <source 
+                            srcSet={`${require(`../images/${project.imageUrl.desktop}`)}`} 
+                            media="(min-width: 800px)" 
+                        />
+                        <source 
+                            srcSet={`${require(`../images/${project.imageUrl.phone800}`)}`} 
+                            media="(min-width: 540px) and (max-width: 800px)"
+                        />
+                        <source 
+                            srcSet={`${require(`../images/${project.imageUrl.phone500}`)}`} 
+                            media="(min-width: 400px) and (max-width: 540px)"
+                        />
+                        <source 
+                            srcSet={`${require(`../images/${project.imageUrl.phone400}`)}`} 
+                        />
+                        <img
+                            src={`${require(`../images/${project.imageUrl.desktop}`)}`} 
+                            className="project--img"
+                        />    
+                    </picture>
+                    {/* <img
+                        src={`${require(`../images/${project.imageUrl.phone}`)}`}
+                        srcSet={`${require(`../images/${project.imageUrl.desktop}`)} 550w, ${require(`../images/${project.imageUrl.phone}`)} 875w`}
+                        sizes={"(max-width: 800px) 875px, (min-width: 800px) 550px"}
+                        className="project--img"
+                        alt="Project Design "
+                    /> */}
+                    </a>
+                </div>
             </div>
         )
     });
