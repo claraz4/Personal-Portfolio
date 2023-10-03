@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.61211d4a.css",
-    "main.js": "/Personal-Portfolio/static/js/main.f39d027a.js",
+    "main.css": "/Personal-Portfolio/static/css/main.1bb9303c.css",
+    "main.js": "/Personal-Portfolio/static/js/main.e4c1b8ff.js",
     "static/js/787.c0870b9d.chunk.js": "/Personal-Portfolio/static/js/787.c0870b9d.chunk.js",
     "static/media/clara.webp": "/Personal-Portfolio/static/media/clara.d16fef1314a8f3ee9da2.webp",
     "static/media/clara.JPG": "/Personal-Portfolio/static/media/clara.f82f36a930f8981436cb.JPG",
     "static/media/clara-smaller.jpg": "/Personal-Portfolio/static/media/clara-smaller.f66ffad6a077874651ec.jpg",
+    "static/media/project-file-organization-phone-all.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone-all.b782b9657c64428ea288.jpg",
     "static/media/project-file-organization-phone.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone.6cf2b163e8b741f5a8b6.jpg",
     "static/media/project-file-organization-800.jpg": "/Personal-Portfolio/static/media/project-file-organization-800.966b028835c2df8e5320.jpg",
+    "static/media/meme-generator-desktop.jpg": "/Personal-Portfolio/static/media/meme-generator-desktop.ab165ccf4bb6c275c275.jpg",
     "static/media/project-file-organization-desktop.jpg": "/Personal-Portfolio/static/media/project-file-organization-desktop.e1ef2c5ca010276af1c4.jpg",
+    "static/media/meme-generator-phone-800.jpg": "/Personal-Portfolio/static/media/meme-generator-phone-800.cb4a1a8bc125e68ed6d9.jpg",
     "static/media/project-file-organization.png": "/Personal-Portfolio/static/media/project-file-organization.403e08321752b6fd79a6.png",
     "static/media/project-file-organization-400.jpg": "/Personal-Portfolio/static/media/project-file-organization-400.89aab2e5bb8611c9d69e.jpg",
     "static/media/tic-tac-toe-phone-800.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-800.8a12099109813935b07a.jpg",
     "static/media/clara-official.webp": "/Personal-Portfolio/static/media/clara-official.4e756eee596942fcb18a.webp",
+    "static/media/meme-generator-original.jpg": "/Personal-Portfolio/static/media/meme-generator-original.b381582788c9955d83fe.jpg",
     "static/media/tic-tac-toe-phone-500.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-500.1d640b0a2e6ee53fe188.jpg",
     "static/media/tic-tac-toe-original.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-original.6a5109aa237edf816c98.jpg",
     "static/media/tic-tac-toe-phone-400.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-400.dd5ecbb14441593ac5fb.jpg",
     "static/media/tic-tac-toe-desktop.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-desktop.862ad858b40cd01621a2.jpg",
+    "static/media/Resume - Clara Zammar.pdf": "/Personal-Portfolio/static/media/Resume - Clara Zammar.dc87e80ced04a424e803.pdf",
     "static/media/instagram-logo.png": "/Personal-Portfolio/static/media/instagram-logo.edb90ecc706a7a25542b.png",
     "static/media/github-logo.png": "/Personal-Portfolio/static/media/github-logo.44eee0c4a6c25b0d7347.png",
     "static/media/twitter-logo.png": "/Personal-Portfolio/static/media/twitter-logo.8e65601e69067aadfe55.png",
@@ -25,12 +30,12 @@
     "static/media/twitter-logo.webp": "/Personal-Portfolio/static/media/twitter-logo.7ce70e33fa6631738225.webp",
     "static/media/linkedin-logo.webp": "/Personal-Portfolio/static/media/linkedin-logo.1156b91afc84498eaaa5.webp",
     "index.html": "/Personal-Portfolio/index.html",
-    "main.61211d4a.css.map": "/Personal-Portfolio/static/css/main.61211d4a.css.map",
-    "main.f39d027a.js.map": "/Personal-Portfolio/static/js/main.f39d027a.js.map",
+    "main.1bb9303c.css.map": "/Personal-Portfolio/static/css/main.1bb9303c.css.map",
+    "main.e4c1b8ff.js.map": "/Personal-Portfolio/static/js/main.e4c1b8ff.js.map",
     "787.c0870b9d.chunk.js.map": "/Personal-Portfolio/static/js/787.c0870b9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61211d4a.css",
-    "static/js/main.f39d027a.js"
+    "static/css/main.1bb9303c.css",
+    "static/js/main.e4c1b8ff.js"
   ]
 }
