@@ -15,9 +15,9 @@ const projects = [
         "paragraph" : "This is a small project to automatize the clean-up of my Downloads folder. Recognizing discernible patterns, I created a solution that would automatically organize my most downloaded files into their designated folders. Any action will be kept tracked off in a text file.",
         "imageUrl" : {
             "desktop" : "project-file-organization-desktop.jpg",
-            "phone800" : "project-file-organization-800.jpg",
-            "phone500" : "project-file-organization-phone.jpg",
-            "phone400" : "project-file-organization-400.jpg"
+            "phone800" : "project-file-organization-phone-all.jpg",
+            "phone500" : "project-file-organization-phone-all.jpg",
+            "phone400" : "project-file-organization-phone-all.jpg"
         },
         "projectURL" : "https://github.com/claraz4/Personal-File-Organization"
     },
@@ -28,7 +28,7 @@ const projects = [
         "imageUrl" : {
             "desktop" : "tic-tac-toe-desktop.jpg",
             "phone800" : "tic-tac-toe-phone-800.jpg",
-            "phone500" : "tic-tac-toe-phone-500.jpg",
+            "phone500" : "tic-tac-toe-phone-800.jpg",
             "phone400" : "tic-tac-toe-phone-400.jpg"
         },
         "projectURL" : "https://github.com/claraz4/Tic-Tac-Toe"

@@ -45,15 +45,9 @@ export default function Projects() {
                         <img
                             src={`${require(`../images/${project.imageUrl.desktop}`)}`} 
                             className="project--img"
+                            alt="Project"
                         />    
                     </picture>
-                    {/* <img
-                        src={`${require(`../images/${project.imageUrl.phone}`)}`}
-                        srcSet={`${require(`../images/${project.imageUrl.desktop}`)} 550w, ${require(`../images/${project.imageUrl.phone}`)} 875w`}
-                        sizes={"(max-width: 800px) 875px, (min-width: 800px) 550px"}
-                        className="project--img"
-                        alt="Project Design "
-                    /> */}
                     </a>
                 </div>
             </div>
