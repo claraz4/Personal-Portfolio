@@ -24,7 +24,7 @@ export default function Projects() {
                     </div>
                     <p className="project--paragraph">{project.paragraph}</p>
                 </div>
-                <div className="project--img-container">
+                <div className={`project--img-container${project.justifyCenter ? " justify-center" : ""}`}>
                     <a href={project.projectURL}>  
                     <picture className="project--img">
                         <source 
@@ -44,7 +44,7 @@ export default function Projects() {
                         />
                         <img
                             src={`${require(`../images/${project.imageUrl.desktop}`)}`} 
-                            className="project--img"
+                            className={"project--img"}
                             alt="Project"
                         />    
                     </picture>

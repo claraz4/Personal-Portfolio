@@ -1,6 +1,4 @@
 Problems to fix: 
 - Filling out my projects
 - Adding the small arrow that takes us back to the beginning
-- Convert all images to webp
 - Check the google page speed insight (mobile: 91 & desktop: 96)
-- Add a part for certificates

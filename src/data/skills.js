@@ -35,6 +35,20 @@ const skills = [
                 ]
             }
         ]
+    },
+    {
+        "type" : "Soft Skills",
+        "skills" : [
+            {
+                "skill" : "",
+                "allSkills" : [
+                    "Leadership", 
+                    "Communication", 
+                    "Time management", 
+                    "Team work"
+                ]
+            }
+        ]
     }
 ];
 

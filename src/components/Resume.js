@@ -39,7 +39,7 @@ export default function Resume() {
         let partData = (allSkills.map(skill => {
             return (
                 <div>
-                    <h3 className="resume--rubric-title">{skill.skill}</h3>
+                    {skill.skill === "" ? "" : <h3 className="resume--rubric-title">{skill.skill}</h3>}
                     <div id="skills">
                         {skill.allSkills.map(s => {
                         return (
