@@ -23,6 +23,19 @@ const projects = [
         "projectURL" : "https://github.com/claraz4/Meme-Generator"
     },
     {
+        "projectName" : "Trivia Quiz",
+        "roleTitle" : "React, JavaScript, HTML, CSS",
+        "paragraph" : "Utilizing the Trivia API, my trivia quiz project became a fun way to boost my general knowledge and enhance my web development skills. It offers a diverse range of over 20 categories for players to enjoy, and its responsive design ensures accessibility across all devices.",
+        "imageUrl" : {
+            "desktop" : "trivia/trivia-quiz-desktop.jpg",
+            "phone800" : "trivia/trivia-quiz-phone-800.jpg",
+            "phone500" : "trivia/trivia-quiz-phone-800.jpg",
+            "phone400" : "trivia/trivia-quiz-phone-400.jpg"
+        },
+        "justifyCenter" : true,
+        "projectURL" : "https://github.com/claraz4/Trivia-Quiz"
+    },
+    {
         "projectName" : "Personal File Organization",
         "roleTitle" : "Python",
         "paragraph" : "This is a small project to automatize the clean-up of my Downloads folder. Recognizing discernible patterns, I created a solution that would automatically organize my most downloaded files into their designated folders. Any action will be kept tracked off in a text file.",
