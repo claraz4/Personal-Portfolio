@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/Personal-Portfolio/static/css/main.1bb9303c.css",
-    "main.js": "/Personal-Portfolio/static/js/main.85883d4c.js",
+    "main.js": "/Personal-Portfolio/static/js/main.7764d54d.js",
     "static/js/787.749b4a44.chunk.js": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/project-file-organization-phone-all.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone-all.b782b9657c64428ea288.jpg",
     "static/media/project-file-organization-phone.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone.6cf2b163e8b741f5a8b6.jpg",
     "static/media/trivia-quiz-desktop.jpg": "/Personal-Portfolio/static/media/trivia-quiz-desktop.9b09cd3de59bae78e3f4.jpg",
     "static/media/project-file-organization-800.jpg": "/Personal-Portfolio/static/media/project-file-organization-800.966b028835c2df8e5320.jpg",
     "static/media/meme-generator-desktop.jpg": "/Personal-Portfolio/static/media/meme-generator-desktop.ab165ccf4bb6c275c275.jpg",
-    "static/media/trivia-quiz-phone-800.jpg": "/Personal-Portfolio/static/media/trivia-quiz-phone-800.c15c57209cc35bd6da5c.jpg",
+    "static/media/trivia-quiz-phone-800.jpg": "/Personal-Portfolio/static/media/trivia-quiz-phone-800.5953ee5b6a830ea07e31.jpg",
     "static/media/project-file-organization-desktop.jpg": "/Personal-Portfolio/static/media/project-file-organization-desktop.e1ef2c5ca010276af1c4.jpg",
     "static/media/meme-generator-phone-800.jpg": "/Personal-Portfolio/static/media/meme-generator-phone-800.cb4a1a8bc125e68ed6d9.jpg",
     "static/media/project-file-organization-400.jpg": "/Personal-Portfolio/static/media/project-file-organization-400.89aab2e5bb8611c9d69e.jpg",
+    "static/media/trivia-quiz-phone-400.jpg": "/Personal-Portfolio/static/media/trivia-quiz-phone-400.626c8d56ab3e3174b06a.jpg",
     "static/media/tic-tac-toe-phone-800.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-800.8a12099109813935b07a.jpg",
     "static/media/clara-official.webp": "/Personal-Portfolio/static/media/clara-official.4e756eee596942fcb18a.webp",
     "static/media/meme-generator-original.jpg": "/Personal-Portfolio/static/media/meme-generator-original.b381582788c9955d83fe.jpg",
@@ -25,11 +26,11 @@
     "static/media/linkedin-logo.webp": "/Personal-Portfolio/static/media/linkedin-logo.1156b91afc84498eaaa5.webp",
     "index.html": "/Personal-Portfolio/index.html",
     "main.1bb9303c.css.map": "/Personal-Portfolio/static/css/main.1bb9303c.css.map",
-    "main.85883d4c.js.map": "/Personal-Portfolio/static/js/main.85883d4c.js.map",
+    "main.7764d54d.js.map": "/Personal-Portfolio/static/js/main.7764d54d.js.map",
     "787.749b4a44.chunk.js.map": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bb9303c.css",
-    "static/js/main.85883d4c.js"
+    "static/js/main.7764d54d.js"
   ]
 }
