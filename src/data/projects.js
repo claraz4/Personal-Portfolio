@@ -10,6 +10,19 @@ RATIO AND SIZES USED FOR PROJECT PICTURES:
 
 const projects = [
     {
+        "projectName" : "Task Manager",
+        "roleTitle" : "React, JavaScript, HTML, CSS, MongoDB, Express.js",
+        "paragraph" : "Introducing my inaugural full-stack mobile web application: a versatile task management platform. Seamlessly organize tasks on your phone and unlock rewards for meeting specific requirements, boosting productivity and efficiency effortlessly.",
+        "imageUrl" : {
+            "desktop" : "task-manager/home-page-desktop.jpg",
+            "phone800" : "task-manager/home-page-phone.webp",
+            "phone500" : "task-manager/home-page-phone.webp",
+            "phone400" : "task-manager/home-page-phone.webp"
+        },
+        "justifyCenter" : true,
+        "projectURL" : "https://github.com/claraz4/Task-Manager"
+    },
+    {
         "projectName" : "Meme Generator",
         "roleTitle" : "React, JavaScript, HTML, CSS",
         "paragraph" : "I created this meme generator during my introductory React course at Scrimba, where I learned to work with online APIs and build dynamic websites. It represents my early experiences in React and highlights my ability to craft interactive web applications.",
@@ -47,6 +60,19 @@ const projects = [
         },
         "justifyCenter" : false,
         "projectURL" : "https://github.com/claraz4/Personal-File-Organization"
+    },
+    {
+        "projectName" : "Converter",
+        "roleTitle" : "React, JavaScript, HTML, CSS",
+        "paragraph" : "Inspired by my logic design course, this project was designed to make base conversions and binary encodings easier to work with. I took this opportunity to sharpen my knowledge in the course, test my logic, and further refine my web-development skills.",
+        "imageUrl" : {
+            "desktop" : "converter/converter-desktop.jpg",
+            "phone800" : "converter/converter-phone.jpg",
+            "phone500" : "converter/converter-phone.jpg",
+            "phone400" : "converter/converter-phone.jpg"
+        },
+        "justifyCenter" : true,
+        "projectURL" : "https://github.com/claraz4/Converter"
     },
     {
         "projectName" : "Tic Tac Toe",

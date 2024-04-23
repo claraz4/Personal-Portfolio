@@ -73,7 +73,7 @@ export default function Resume() {
                         className={""}
                     />
                     <div id="cv-button">
-                        <a href="https://docs.google.com/uc?export=download&id=1Xa6mEceSIHUwco0tTWMKq8J_sJkvWZAZ" 
+                        <a href="https://docs.google.com/uc?export=download&id=1C-mQWD4_Au_gwx8jsTETKDSdNWU_y8mr" 
                         download>DOWNLOAD CV</a>
                     </div>
                 </div>

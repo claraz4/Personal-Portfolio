@@ -12,12 +12,18 @@ const skills = [
                 ]
             },
             {
-                "skill" : "Frontend Development",
+                "skill" : "Front-End Development",
                 "allSkills" : [
                     "HTML", 
                     "CSS", 
-                    "Bootstrap", 
-                    "React"
+                    "React.js"
+                ]
+            },
+            {
+                "skill" : "Back-End Development",
+                "allSkills" : [
+                    "Node.js", 
+                    "Express.js"
                 ]
             },
             {
