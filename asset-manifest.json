@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal-Portfolio/static/css/main.1bb9303c.css",
-    "main.js": "/Personal-Portfolio/static/js/main.01e46d5c.js",
+    "main.js": "/Personal-Portfolio/static/js/main.c0e80953.js",
     "static/js/787.749b4a44.chunk.js": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/project-file-organization-phone-all.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone-all.b782b9657c64428ea288.jpg",
     "static/media/project-file-organization-phone.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone.6cf2b163e8b741f5a8b6.jpg",
@@ -13,6 +13,7 @@
     "static/media/meme-generator-phone-800.jpg": "/Personal-Portfolio/static/media/meme-generator-phone-800.cb4a1a8bc125e68ed6d9.jpg",
     "static/media/project-file-organization-400.jpg": "/Personal-Portfolio/static/media/project-file-organization-400.89aab2e5bb8611c9d69e.jpg",
     "static/media/trivia-quiz-phone-400.jpg": "/Personal-Portfolio/static/media/trivia-quiz-phone-400.626c8d56ab3e3174b06a.jpg",
+    "static/media/home-page-desktop.jpg": "/Personal-Portfolio/static/media/home-page-desktop.d58a66e0a3f44b780c49.jpg",
     "static/media/tic-tac-toe-phone-800.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-800.8a12099109813935b07a.jpg",
     "static/media/clara-official.webp": "/Personal-Portfolio/static/media/clara-official.4e756eee596942fcb18a.webp",
     "static/media/meme-generator-original.jpg": "/Personal-Portfolio/static/media/meme-generator-original.b381582788c9955d83fe.jpg",
@@ -20,6 +21,7 @@
     "static/media/tic-tac-toe-phone-500.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-500.1d640b0a2e6ee53fe188.jpg",
     "static/media/tic-tac-toe-original.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-original.6a5109aa237edf816c98.jpg",
     "static/media/tic-tac-toe-phone-400.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-400.dd5ecbb14441593ac5fb.jpg",
+    "static/media/home-page-phone.webp": "/Personal-Portfolio/static/media/home-page-phone.99173f1096ed9266b022.webp",
     "static/media/tic-tac-toe-desktop.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-desktop.862ad858b40cd01621a2.jpg",
     "static/media/converter-phone.jpg": "/Personal-Portfolio/static/media/converter-phone.471cc0ff7b0add44ce39.jpg",
     "static/media/phone.png": "/Personal-Portfolio/static/media/phone.a6cfba9c61be19537ddf.png",
@@ -30,11 +32,11 @@
     "static/media/linkedin-logo.webp": "/Personal-Portfolio/static/media/linkedin-logo.1156b91afc84498eaaa5.webp",
     "index.html": "/Personal-Portfolio/index.html",
     "main.1bb9303c.css.map": "/Personal-Portfolio/static/css/main.1bb9303c.css.map",
-    "main.01e46d5c.js.map": "/Personal-Portfolio/static/js/main.01e46d5c.js.map",
+    "main.c0e80953.js.map": "/Personal-Portfolio/static/js/main.c0e80953.js.map",
     "787.749b4a44.chunk.js.map": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bb9303c.css",
-    "static/js/main.01e46d5c.js"
+    "static/js/main.c0e80953.js"
   ]
 }
