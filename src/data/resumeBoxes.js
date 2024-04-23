@@ -17,7 +17,7 @@ const resumeBoxes = [
                 "subtitle": "BE in Computer Engineering",
                 "subinfo1": "Lebanese American University", 
                 "subinfo2": "Byblos, Lebanon",
-                "paragraph1": "Completed the Computer Programming course and aiming to complete the Data Structures and Logic Design courses.",
+                "paragraph1": "Successfully completed Computer Programming, Data Structures and Logic Design courses.",
                 "paragraph2": "Currently enrolled in the Honors Program with a CGPA of 3.92."
             },
             {
@@ -34,7 +34,7 @@ const resumeBoxes = [
                 "subinfo1": "Saint-Coeurs Sioufi", 
                 "subinfo2": "Achrafieh, Lebanon",
                 "paragraph1": "Specialized in Math, Physics, and Chemistry.",
-                "paragraph2": "Graduated with an overall high GPA of 17.9 out of 20."
+                "paragraph2": "Graduated with an overall high GPA of 17.7 out of 20."
             }
         ]
     },
