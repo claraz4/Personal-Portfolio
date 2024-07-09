@@ -5,6 +5,7 @@ import Title from "./Title";
 import resumeBoxesData from "../data/resumeBoxes";
 import skillsData from "../data/skills";
 import "../styles.css"
+import RevealOnScroll from "./RevealOnScroll";
 
 export default function Resume() {
     // Creating the array to render the experience and education mainly with their respective boxes
@@ -13,18 +14,20 @@ export default function Resume() {
         
         fullArray.push(title.rubricInfo.map((info) => {
             return (
-                <div className="info-box">
-                    <div className="resume--info">
-                        <p className="resume--date">{info.date}</p>
-                        <p className="resume--subtitle">{info.subtitle}</p>
-                        <p className="resume--subinfo">{info.subinfo1}</p>
-                        <p className="resume--subinfo">{info.subinfo2}</p>
+                <RevealOnScroll>
+                    <div className="info-box">
+                        <div className="resume--info">
+                            <p className="resume--date">{info.date}</p>
+                            <p className="resume--subtitle">{info.subtitle}</p>
+                            <p className="resume--subinfo">{info.subinfo1}</p>
+                            <p className="resume--subinfo">{info.subinfo2}</p>
+                        </div>
+                        <div className="resume--text">
+                            <p className="resume--paragraph">{info.paragraph1}</p>
+                            <p className="resume--paragraph">{info.paragraph2}</p>
+                        </div> 
                     </div>
-                    <div className="resume--text">
-                        <p className="resume--paragraph">{info.paragraph1}</p>
-                        <p className="resume--paragraph">{info.paragraph2}</p>
-                    </div> 
-                </div> 
+                </RevealOnScroll> 
             )}
         ))
 
@@ -54,7 +57,11 @@ export default function Resume() {
         }));
 
         partData = (
-            <div className="info-box" id="skills-container">{partData}</div>
+            <RevealOnScroll>
+                <div className="info-box" id="skills-container">
+                    {partData}
+                </div>
+            </RevealOnScroll>
         )
 
         fullData.push(partData);

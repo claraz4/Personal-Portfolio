@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Title from "./Title";
 import projectsData from "../data/projects";
 import "../styles.css";
+import RevealOnScroll from "./RevealOnScroll";
 
 export default function Projects() {
     // Text for the project
@@ -13,44 +14,46 @@ export default function Projects() {
     // Creating the array that will render the projects
     const projects = projectsData.map(project => {
         return (
-            <div id="project" className="info-box">
-                <div id="project--title-parag">
-                    <div className="flex-row padding-top-10">
-                        <div id="blue-rectangle"></div>
-                        <div className="padding-10 flex-column align-start">
-                            <h4 className="project--title">{project.projectName}</h4>
-                            <h6 className="project--role">{project.roleTitle}</h6>
+            <RevealOnScroll>
+                <div id="project" className="info-box">
+                    <div id="project--title-parag">
+                        <div className="flex-row padding-top-10">
+                            <div id="blue-rectangle"></div>
+                            <div className="padding-10 flex-column align-start">
+                                <h4 className="project--title">{project.projectName}</h4>
+                                <h6 className="project--role">{project.roleTitle}</h6>
+                            </div>
                         </div>
+                        <p className="project--paragraph">{project.paragraph}</p>
                     </div>
-                    <p className="project--paragraph">{project.paragraph}</p>
+                    <div className={`project--img-container${project.justifyCenter ? " justify-center" : ""}`}>
+                        <a href={project.projectURL}>  
+                        <picture className="project--img">
+                            <source 
+                                srcSet={`${require(`../images/${project.imageUrl.desktop}`)}`} 
+                                media="(min-width: 800px)" 
+                            />
+                            <source 
+                                srcSet={`${require(`../images/${project.imageUrl.phone800}`)}`} 
+                                media="(min-width: 540px) and (max-width: 800px)"
+                            />
+                            <source 
+                                srcSet={`${require(`../images/${project.imageUrl.phone500}`)}`} 
+                                media="(min-width: 400px) and (max-width: 540px)"
+                            />
+                            <source 
+                                srcSet={`${require(`../images/${project.imageUrl.phone400}`)}`} 
+                            />
+                            <img
+                                src={`${require(`../images/${project.imageUrl.desktop}`)}`} 
+                                className={"project--img"}
+                                alt="Project"
+                            />    
+                        </picture>
+                        </a>
+                    </div>
                 </div>
-                <div className={`project--img-container${project.justifyCenter ? " justify-center" : ""}`}>
-                    <a href={project.projectURL}>  
-                    <picture className="project--img">
-                        <source 
-                            srcSet={`${require(`../images/${project.imageUrl.desktop}`)}`} 
-                            media="(min-width: 800px)" 
-                        />
-                        <source 
-                            srcSet={`${require(`../images/${project.imageUrl.phone800}`)}`} 
-                            media="(min-width: 540px) and (max-width: 800px)"
-                        />
-                        <source 
-                            srcSet={`${require(`../images/${project.imageUrl.phone500}`)}`} 
-                            media="(min-width: 400px) and (max-width: 540px)"
-                        />
-                        <source 
-                            srcSet={`${require(`../images/${project.imageUrl.phone400}`)}`} 
-                        />
-                        <img
-                            src={`${require(`../images/${project.imageUrl.desktop}`)}`} 
-                            className={"project--img"}
-                            alt="Project"
-                        />    
-                    </picture>
-                    </a>
-                </div>
-            </div>
+            </RevealOnScroll>
         )
     });
 
