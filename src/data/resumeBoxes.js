@@ -17,8 +17,8 @@ const resumeBoxes = [
                 "subtitle": "BE in Computer Engineering",
                 "subinfo1": "Lebanese American University", 
                 "subinfo2": "Byblos, Lebanon",
-                "paragraph1": "Successfully completed Computer Programming, Data Structures and Logic Design courses.",
-                "paragraph2": "Currently enrolled in the Honors Program with a CGPA of 3.92."
+                "paragraph1": "Successfully completed Data Structures, Microprocessors, Electronics, and Signals courses.",
+                "paragraph2": "Currently enrolled in the Honors Program with a CGPA of 3.94."
             },
             {
                 "date": "2011 - 2025 (expected)",
@@ -48,6 +48,14 @@ const resumeBoxes = [
                 "subinfo2": "",
                 "paragraph1": "Passionate about helping other students succeed and witnessing their progress.",
                 "paragraph2": "Experienced with students from Grade 8 all the way up to Grade 12."
+            },
+            {
+                "date": "2024",
+                "subtitle": "Information Technlogoy Intern",
+                "subinfo1": "At Dar Al-Handassah", 
+                "subinfo2": "",
+                "paragraph1": "Completed a 6-week internship at Dar Al-Handassah",
+                "paragraph2": "Many projects regarding networking, virtualization and software development were covered."
             }
         ]
     }

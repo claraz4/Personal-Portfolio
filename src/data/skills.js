@@ -29,7 +29,8 @@ const skills = [
             {
                 "skill" : "Database Skills",
                 "allSkills" : [
-                    "SQL"
+                    "SQL",
+                    "MongoDB"
                 ]
             },
             {
@@ -51,7 +52,8 @@ const skills = [
                     "Leadership", 
                     "Communication", 
                     "Time management", 
-                    "Team work"
+                    "Team work",
+                    "Project Management"
                 ]
             }
         ]

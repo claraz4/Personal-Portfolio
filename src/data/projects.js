@@ -10,6 +10,19 @@ RATIO AND SIZES USED FOR PROJECT PICTURES:
 
 const projects = [
     {
+        "projectName" : "Blog App",
+        "roleTitle" : "React, JavaScript, HTML, CSS, MongoDB, Express.js",
+        "paragraph" : "During my internship at Dar Al-Handassah, I collaborated with a team of three to develop a Reddit clone web app. The app allows users to post blogs and interact with other users. The project required implementing key features such as user authentication, post creation, and voting, all within a week.",
+        "imageUrl" : {
+            "desktop" : "blog/blog-desktop.webp",
+            "phone800" : "blog/blog-phone-800.webp",
+            "phone500" : "blog/blog-phone-500.webp",
+            "phone400" : "blog/blog-phone-400.webp"
+        },
+        "justifyCenter" : true,
+        "projectURL" : "https://github.com/claraz4/Blog-Dar"
+    },
+    {
         "projectName" : "Task Manager",
         "roleTitle" : "React, JavaScript, HTML, CSS, MongoDB, Express.js",
         "paragraph" : "Introducing my inaugural full-stack mobile web application: a versatile task management platform. Seamlessly organize tasks on your phone and unlock rewards for meeting specific requirements, boosting productivity and efficiency effortlessly.",
