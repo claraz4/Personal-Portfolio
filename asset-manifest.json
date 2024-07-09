@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal-Portfolio/static/css/main.1bb9303c.css",
-    "main.js": "/Personal-Portfolio/static/js/main.9d5a42a0.js",
+    "main.js": "/Personal-Portfolio/static/js/main.eb3add0e.js",
     "static/js/787.749b4a44.chunk.js": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/project-file-organization-phone-all.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone-all.b782b9657c64428ea288.jpg",
     "static/media/project-file-organization-phone.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone.6cf2b163e8b741f5a8b6.jpg",
@@ -15,8 +15,12 @@
     "static/media/trivia-quiz-phone-400.jpg": "/Personal-Portfolio/static/media/trivia-quiz-phone-400.626c8d56ab3e3174b06a.jpg",
     "static/media/home-page-desktop.jpg": "/Personal-Portfolio/static/media/home-page-desktop.d58a66e0a3f44b780c49.jpg",
     "static/media/tic-tac-toe-phone-800.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-800.8a12099109813935b07a.jpg",
+    "static/media/blog-phone-500.webp": "/Personal-Portfolio/static/media/blog-phone-500.a4a4f1461d9a7ede7d0c.webp",
+    "static/media/blog-phone-400.webp": "/Personal-Portfolio/static/media/blog-phone-400.731d6c80016a809fce46.webp",
+    "static/media/blog-phone-800.webp": "/Personal-Portfolio/static/media/blog-phone-800.75892d529fcf2817f043.webp",
     "static/media/clara-official.webp": "/Personal-Portfolio/static/media/clara-official.4e756eee596942fcb18a.webp",
     "static/media/meme-generator-original.jpg": "/Personal-Portfolio/static/media/meme-generator-original.b381582788c9955d83fe.jpg",
+    "static/media/blog-desktop.webp": "/Personal-Portfolio/static/media/blog-desktop.da659079f4d24fa53737.webp",
     "static/media/converter-desktop.jpg": "/Personal-Portfolio/static/media/converter-desktop.64031c3ad0934eaf3c83.jpg",
     "static/media/tic-tac-toe-phone-500.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-500.1d640b0a2e6ee53fe188.jpg",
     "static/media/tic-tac-toe-original.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-original.6a5109aa237edf816c98.jpg",
@@ -32,11 +36,11 @@
     "static/media/linkedin-logo.webp": "/Personal-Portfolio/static/media/linkedin-logo.1156b91afc84498eaaa5.webp",
     "index.html": "/Personal-Portfolio/index.html",
     "main.1bb9303c.css.map": "/Personal-Portfolio/static/css/main.1bb9303c.css.map",
-    "main.9d5a42a0.js.map": "/Personal-Portfolio/static/js/main.9d5a42a0.js.map",
+    "main.eb3add0e.js.map": "/Personal-Portfolio/static/js/main.eb3add0e.js.map",
     "787.749b4a44.chunk.js.map": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bb9303c.css",
-    "static/js/main.9d5a42a0.js"
+    "static/js/main.eb3add0e.js"
   ]
 }
