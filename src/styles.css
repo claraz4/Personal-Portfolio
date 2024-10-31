@@ -438,6 +438,7 @@ p {
     width: 130px;
     margin-right: 20px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .home--button > a,
@@ -461,7 +462,6 @@ p {
     color: white;
 }
 
-#cv-button:hover > a,
 #projects-button {
     color: black;
 }
@@ -472,9 +472,17 @@ p {
 }
 
 #cv-button:hover,
+.home--button:hover {
+    background-color: #0444cf;
+}
+
 .outline-box {
     background-color: transparent;
     border: black solid 1px;
+}
+
+.outline-box:hover {
+    background-color: rgba(0,0,0,0.05);
 }
 
 

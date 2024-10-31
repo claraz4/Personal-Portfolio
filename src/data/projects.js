@@ -10,6 +10,18 @@ RATIO AND SIZES USED FOR PROJECT PICTURES:
 
 const projects = [
     {
+        "projectName" : "Studytron",
+        "roleTitle" : "React, JavaScript, HTML, CSS",
+        "paragraph" : "I co-founded and deployed a tutoring website that connects students with tutors, offering session-based booking, profile management, and sorting options. A subscription model was also implemented for tutors, allowing flexible pricing and availability while eliminating commission fees.",
+        "imageUrl" : {
+            "desktop" : "studytron/studytron-desktop.webp",
+            "phone800" : "studytron/studytron-phone-800.webp",
+            "phone500" : "studytron/studytron-phone-500.webp",
+            "phone400" : "studytron/studytron-phone-500.webp"
+        },
+        "justifyCenter" : true,
+        "projectURL" : "https://studytron.com"
+    },{
         "projectName" : "Blog App",
         "roleTitle" : "React, JavaScript, HTML, CSS, MongoDB, Express.js",
         "paragraph" : "During my internship at Dar Al-Handassah, I collaborated with a team of three to develop a Reddit clone web app. The app allows users to post blogs and interact with other users. The project required implementing key features such as user authentication, post creation, and voting, all within a week.",

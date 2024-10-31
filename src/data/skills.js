@@ -34,6 +34,13 @@ const skills = [
                 ]
             },
             {
+                "skill" : "Testing",
+                "allSkills" : [
+                    "Jest", 
+                    "React Testing Library"
+                ]
+            },
+            {
                 "skill" : "Languages",
                 "allSkills" : [
                     "English", 
