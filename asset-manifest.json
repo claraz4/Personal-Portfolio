@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.3fd3c195.css",
-    "main.js": "/Personal-Portfolio/static/js/main.c28b9355.js",
+    "main.css": "/Personal-Portfolio/static/css/main.18607dc9.css",
+    "main.js": "/Personal-Portfolio/static/js/main.9190ffa1.js",
     "static/js/787.749b4a44.chunk.js": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js",
     "static/media/project-file-organization-phone-all.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone-all.b782b9657c64428ea288.jpg",
     "static/media/project-file-organization-phone.jpg": "/Personal-Portfolio/static/media/project-file-organization-phone.6cf2b163e8b741f5a8b6.jpg",
@@ -13,10 +13,13 @@
     "static/media/meme-generator-phone-800.jpg": "/Personal-Portfolio/static/media/meme-generator-phone-800.cb4a1a8bc125e68ed6d9.jpg",
     "static/media/project-file-organization-400.jpg": "/Personal-Portfolio/static/media/project-file-organization-400.89aab2e5bb8611c9d69e.jpg",
     "static/media/trivia-quiz-phone-400.jpg": "/Personal-Portfolio/static/media/trivia-quiz-phone-400.626c8d56ab3e3174b06a.jpg",
+    "static/media/studytron-phone-800.webp": "/Personal-Portfolio/static/media/studytron-phone-800.8e9c9fe3d29d997e2c51.webp",
     "static/media/home-page-desktop.jpg": "/Personal-Portfolio/static/media/home-page-desktop.d58a66e0a3f44b780c49.jpg",
+    "static/media/studytron-phone-500.webp": "/Personal-Portfolio/static/media/studytron-phone-500.31d73280a837c3c5ccca.webp",
     "static/media/tic-tac-toe-phone-800.jpg": "/Personal-Portfolio/static/media/tic-tac-toe-phone-800.8a12099109813935b07a.jpg",
     "static/media/blog-phone-500.webp": "/Personal-Portfolio/static/media/blog-phone-500.a4a4f1461d9a7ede7d0c.webp",
     "static/media/blog-phone-400.webp": "/Personal-Portfolio/static/media/blog-phone-400.731d6c80016a809fce46.webp",
+    "static/media/studytron-desktop.webp": "/Personal-Portfolio/static/media/studytron-desktop.7f1543150c95d4a726c5.webp",
     "static/media/blog-phone-800.webp": "/Personal-Portfolio/static/media/blog-phone-800.75892d529fcf2817f043.webp",
     "static/media/clara-official.webp": "/Personal-Portfolio/static/media/clara-official.4e756eee596942fcb18a.webp",
     "static/media/meme-generator-original.jpg": "/Personal-Portfolio/static/media/meme-generator-original.b381582788c9955d83fe.jpg",
@@ -35,12 +38,12 @@
     "static/media/twitter-logo.webp": "/Personal-Portfolio/static/media/twitter-logo.7ce70e33fa6631738225.webp",
     "static/media/linkedin-logo.webp": "/Personal-Portfolio/static/media/linkedin-logo.1156b91afc84498eaaa5.webp",
     "index.html": "/Personal-Portfolio/index.html",
-    "main.3fd3c195.css.map": "/Personal-Portfolio/static/css/main.3fd3c195.css.map",
-    "main.c28b9355.js.map": "/Personal-Portfolio/static/js/main.c28b9355.js.map",
+    "main.18607dc9.css.map": "/Personal-Portfolio/static/css/main.18607dc9.css.map",
+    "main.9190ffa1.js.map": "/Personal-Portfolio/static/js/main.9190ffa1.js.map",
     "787.749b4a44.chunk.js.map": "/Personal-Portfolio/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fd3c195.css",
-    "static/js/main.c28b9355.js"
+    "static/css/main.18607dc9.css",
+    "static/js/main.9190ffa1.js"
   ]
 }
