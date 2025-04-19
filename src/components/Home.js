@@ -32,7 +32,7 @@ export default function Home() {
                 }, i * 100);
             }
         }, 1000);
-    }, []);
+    }, [introPhrase]);
         
 
 

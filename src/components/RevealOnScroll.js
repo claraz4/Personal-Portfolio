@@ -5,6 +5,8 @@ export default function RevealOnScroll({ children }) {
     const ref = useRef(null);
  
     useEffect(() => {
+        const element = ref.current;
+
         const scrollObserver = new IntersectionObserver(([entry]) => {
             if (entry.isIntersecting) {
                 setIsVisible(true);
@@ -12,11 +14,11 @@ export default function RevealOnScroll({ children }) {
             }
         });
  
-        scrollObserver.observe(ref.current);
+        scrollObserver.observe(element);
  
         return () => {
-            if (ref.current) {
-                scrollObserver.unobserve(ref.current);
+            if (element) {
+                scrollObserver.unobserve(element);
             }
         };
     }, []);
