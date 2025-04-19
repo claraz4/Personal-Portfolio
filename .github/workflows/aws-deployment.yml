@@ -1,0 +1,39 @@
+name: Deploy React App on AWS
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    # Checkout Code:
+    # This step is for the workflow to be able to access the files of the last push
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    # Install Node:
+    # We need this to run npm install and npm run build
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4.4.0
+      with:
+        node-version: ${{ secrets.NODE_VERSION }}
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build the App
+      run: npm run build
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4.1.0
+      with:
+        aws-region: eu-west-3
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    - name: Deploy to AWS S3
+      run: aws s3 sync build/ s3://claras-personal-portfolio --delete
